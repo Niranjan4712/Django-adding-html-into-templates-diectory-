@@ -18,7 +18,8 @@ from django.urls import path
 from .import veiws
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',veiws.index,name='index')
-
+    path('admin/',admin.site.urls),
+    path('',veiws.index,name='index'),
+    path('admin',veiws.admin,name='admin'),
+    path('account',veiws.account,name='account')
 ]
